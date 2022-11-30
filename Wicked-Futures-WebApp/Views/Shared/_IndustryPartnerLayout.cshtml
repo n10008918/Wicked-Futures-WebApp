@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Wicked_Futures_WebApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Wicked_Futures_WebApp.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/e128bd20-c2c6-4b73-a09f-007aa4b3140c.png" class="d-inline-block" style="width: 120px; height: auto;" alt="" loading="lazy">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item text-end">
+                            <a class="btn btn-info" asp-area="" asp-controller="Home" asp-action="Student">Home</a>
+                        </li>
+
+                        <li class="nav-item text-end">
+                            <a class="btn" asp-area="" asp-controller="Home" asp-action="Education content"> Students</a>
+                        </li>
+
+                        <li class="nav-item text-end">
+                            <a class="btn" asp-area="" asp-controller="Home" asp-action="">Leaderboard</a>
+                        </li>
+
+                        <li class="nav-item text-end">
+                            <a class="btn" asp-area="" asp-controller="Home" asp-action="">About Company</a>
+                        </li>
+
+                        <li class="nav-item dropdown pr-5 text-end">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Adam
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><h5 class="text-center">Will Slaps</h5></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Account settings</a></li>
+                                <li><a class="dropdown-item" href="#">Achievements</a></li>
+                                <li><a class="dropdown-item" href="#">Communication</a></li>
+                                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- end Nav Bar -->
+
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

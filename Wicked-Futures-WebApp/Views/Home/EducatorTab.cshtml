@@ -1,0 +1,75 @@
+﻿<style>
+    /* Hexadecimal value */
+    .div-1 {
+        background-color: #63A7AC;
+    }
+        li {
+            padding-right:1rem;
+        }
+        .btn{
+            font-size:20px;
+            border-radius: 21px
+        }
+        .btn-info{
+            padding: 5px 30px;
+            background-color: #63A7AC;
+            border-color: #63A7AC;
+        }
+        .btn-info:hover {
+            color: white;
+            background-color: #6AB7BC;
+            border-color: #6AB7BC;
+    }
+        .centered {
+            position: absolute;
+            top: 25%;
+            left: 10%;
+            transform: translate(-25%, -10%);
+        }
+        .mainIMG {
+            position: relative;
+            text-align: left;
+            color: black;
+        }
+
+        
+</style>
+
+<!-- Nav Bar -->
+<nav class="navbar navbar-light rounded bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="/images/e128bd20-c2c6-4b73-a09f-007aa4b3140c.png" class="d-inline-block" style="width: 120px; height: auto;" alt="" loading="lazy">
+    </a>
+    <ul class="nav justify-content-end align-middle">
+        <li class="nav-item">
+            <a class="btn" asp-area="" asp-controller="Home" asp-action="Index">Students</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="btn text-info" asp-area="" asp-controller="Home" asp-action="EducatorTab">For Educators</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="btn" asp-area="" asp-controller="Home" asp-action="IndustryTab">For Industry Partners</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="btn" asp-area="" asp-controller="Home" asp-action="TeacherLogin">Login</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="btn btn-info" asp-area="" asp-controller="Home" asp-action="TeacherRegistration">Sign Up</a>
+        </li>
+    </ul>
+</nav>
+<!-- Nav Bar -->
+
+
+<div class="container-fluid bg-light px-0 pb-5 mainIMG">
+    <img src="/images/shutterstock_1127599331b.jpg" alt="Snow" style="width:100%;opacity:0.7;">
+    <div class="centered"><h1>Become an Educator<br>Today.</h1><br><br>
+        <h2>Phasellus vehicula a mauris<br>vitae placerat. Duis porttitor<br>iaculis turpis.</h2> <br><br>
+        <button type="button" class="btn btn-info btn-lg" asp-area="" asp-controller="Home" asp-action="TeacherRegistration">Start Now</button>
+    </div>
+</div>
+

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wicked-Futures-WebApp", "Wicked-Futures-WebApp.csproj", "{8F60494E-8EE2-4CF3-AC68-7601D042ED3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0624CA79-356A-478A-8E52-A0E59E7F8A10}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F60494E-8EE2-4CF3-AC68-7601D042ED3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F60494E-8EE2-4CF3-AC68-7601D042ED3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F60494E-8EE2-4CF3-AC68-7601D042ED3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F60494E-8EE2-4CF3-AC68-7601D042ED3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E0EBE69-19A0-4BCD-9BAE-0E64C498864B}
+	EndGlobalSection
+EndGlobal

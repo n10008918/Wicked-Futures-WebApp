@@ -1,0 +1,214 @@
+﻿<style>
+    .search+button {
+        width: 350px;
+    }
+    .navbar {
+        background-color: #63A7AC; 
+    }
+    .searchbar {
+        margin-top: 15px;
+    }
+    .searchbutton {
+        background-color: #EBB542;
+        border-color: #EBB542;
+        border-radius: 15px;
+        color: white;
+    }
+    .card1 {
+        width: 390px;
+        height: 300px;
+        border-radius: 15px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .card2 {
+        width: 390px;
+        height: 300px;    
+    }
+    .card3 {
+        width: 390px;
+        height: 300px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .card3:hover {
+        color: white;
+        background-color: #63A7AC;
+    }
+    .badge {
+        width: 50px;
+        border-radius: 15px;
+        font-size: 16px;
+    }
+    .viewclass {
+        background-color: #EBB542;
+        border-color: #EBB542;
+        border-radius: 15px;
+        width: 125px;
+        margin-bottom: 10px;
+    }
+
+    .viewclass:hover {
+        background-color: #F6BC3D;
+        border-color: #F6BC3D;
+    }
+    .card-header {
+        background-color: white;
+    }
+    
+</style>
+<!-- Nav Bar -->
+@{
+    ViewData["Title"] = "Teacher Page";
+    Layout = "_TeacherLayout";
+}
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-light" style="justify-content: center">
+          <form class="form-inline searchbar">
+            <input class="form-control mr-sm-2 search+button" type="search" placeholder="Search all classes" aria-label="Search">
+            <button class="btn searchbutton my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </nav>
+    </div>
+    <div class="row bg-light pb-5">
+        <!-- Left box -->
+        <div class="col-lg-7 p-5 m-2">
+            <h3 class="text-info">My Classes</h3>
+            <div class="card-deck pt-3">
+                <div class="row mx-auto">
+                    <div class="card card3 border-info btn" onclick="loadDoc(0)">
+                        <div class="card-body text-center d-flex align-items-center">
+                            <div class="container-fluid align-middle">
+                                <p class="card-text">Add new class</p>
+                                <div class="d-flex pb-3">
+                                    <hr class="my-auto flex-grow-1">
+                                    <div class="px-4 text-muted">or</div>
+                                    <hr class="my-auto flex-grow-1">
+                                </div>
+                                <p class="card-text">Add new students</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card card1 border-info btn" onclick="loadDoc(1)">
+                        <h5 class="card-header bg-white text-info">Class1</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <p class="card-text col-auto mr-auto">Students</p>
+
+                                <p class="col-auto badge badge-info">4</p>
+                            </div>
+                            <div class="row">
+                                <p class="card-text col-auto mr-auto">Active Assessments</p>
+
+                                <p class="col-auto badge badge-info">13</p>
+                            </div>
+
+                        </div>
+                        <div class="btn viewclass btn-primary mt-auto">View Class</div>
+                    </div>
+                </div>
+
+                <div class="row pt-3 mx-auto">
+                    <div class="card card1 border-info btn" onclick="loadDoc(2)">
+                        <h5 class="card-header bg-white text-info">Class2</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <p class="card-text col-auto mr-auto">Students</p>
+
+                                <p class="col-auto badge badge-info">4</p>
+                            </div>
+                            <div class="row">
+                                <p class="card-text col-auto mr-auto">Active Assessments</p>
+
+                                <p class="col-auto badge badge-info">13</p>
+                            </div>
+
+                        </div>
+                        <div class="btn viewclass btn-primary mt-auto">View Class</div>
+                    </div>
+                    <div class="card card1 border-info btn" onclick="loadDoc(3)">
+                        <h5 class="card-header bg-white text-info">Class3</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <p class="card-text col-auto mr-auto">Students</p>
+
+                                <p class="col-auto badge badge-info">4</p>
+                            </div>
+                            <div class="row">
+                                <p class="card-text col-auto mr-auto">Active Assessments</p>
+
+                                <p class="col-auto badge badge-info">13</p>
+                            </div>
+
+                        </div>
+                        <div class="btn viewclass btn-primary mt-auto">View Class</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- Right box -->
+        <div class="col-lg-4 d-flex align-items-center mx-auto pt-5">
+
+           
+        <div class="card card2">
+                <div class="card-header">
+                <h5>Class 1</h5>
+                </div>            
+                <div class="card-body">
+                   
+                <hr>
+                <table class="table-striped container-fluid">
+                    <thead>
+                        <tr>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"> </th>
+                            <td> </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> </th>
+                            <td> </td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td> </td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td scope="row"></td>
+                            <td> </td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>function loadDoc(classnum) {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            document.getElementById("demo").innerHTML =
+                this.responseText;
+        }
+        xhttp.open("GET", "http://127.0.0.1:5500/ajax_info" + classnum + ".txt");
+        xhttp.send();
+    }</script>

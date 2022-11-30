@@ -1,0 +1,182 @@
+﻿<style>
+html, body {
+    height: 100%;
+    background-color: #63A7AC;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card1 {
+    width: 390px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 30px;
+}
+.card2 {
+    background-color: white;
+    height: 100vh;
+    width: 300px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 70px;
+    cursor: pointer;
+}
+.card3 {
+    background-color: white;
+    height: 100vh;
+    width: 300px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 15px;
+    cursor: pointer;
+}
+.card2:hover {
+    background-color: #E5E5E5;
+    height: 100vh;
+    width: 300px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 70px;
+}
+.card3:hover {
+    background-color: #E5E5E5;
+    height: 100vh;
+    width: 300px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 15px;
+}
+.card4 {
+    width: 300px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: -40px;
+}
+.my-5 {
+    background-color: #63A7AC;
+}
+h2 {
+    margin-left: 50px;
+    margin-top: -70px;
+    margin-bottom: 40px;
+    color: white;
+}
+.proName {
+    margin-left: 75px;
+    margin-top: -60px;
+}
+.schoolName {
+    margin-left: 75px;
+    margin-top: -20px;
+}
+.fa-user-circle-o {
+    margin-top: 10px;
+}
+.header1 {
+    width: 390px;
+    border-radius: 15px;
+}
+.btn1 {
+    background-color: #EBB542;
+    border-color: #EBB542;
+    border-radius: 15px;
+    width: 250px;
+    margin-left: 55px;
+}
+.btn1:hover {
+    background-color: #F6BC3D;
+    border-color: #F6BC3D;
+}
+.btn3 {
+    background-color: #EBB542;
+    border-color: #EBB542;
+    border-radius: 15px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+.btn3:hover {
+    background-color: #F6BC3D;
+    border-color: #F6BC3D;
+}
+.image2 {
+    margin-right: 10px;
+    width: 15%;
+    }
+.cardimage {
+    height: 10vw;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+} 
+.cardContent {
+    text-align: left !important;
+}
+.cardfooter {
+    position:absolute;
+  bottom:0;
+}
+
+</style>
+
+@{
+    ViewData["Title"] = "Student Page";
+    Layout = "_StudentLayout";
+}
+<div class="container-fluid my-5 rounded">
+    <div class="row my-2">
+         <div class="col-xlg-3 col-md-3 col-sm-12 p-5">
+         <div class="card card1 text-left">
+              <div class="card-header header1">
+                <p class="card-title profile"><i class="fa fa-user-circle-o fa-3x"></i><h5 class="proName">Adam Paul</h5></p>
+                <p class="schoolName">Example State School</p>
+              </div>
+              <div class="card-body">
+                <h6 class="card-title"><img src="/images/image6@2x.png" class="image2" width="20"/>My Achievements</h6>
+                <p class="card-text">0 Badges.</p>
+                <p class="card-text">0 Cerrtificates</p>
+                <a href="#" class="btn btn1 btn-primary">View all achievements</a>
+              </div>     
+            </div>
+             </div>
+        <div class="col-xlg-3 col-md-3 col-sm-12 p-5">
+                <div class="card-img-top card2 d-flex flex-column">
+                    <img src="/images/91256cb0-9415-41be-933f-f405dc394c11.jpg" class="cardimage" alt="Hollywood Sign on The Hill" />
+                    <div class="card-body">
+                        <p>Example State School</p>
+                        <p><h5>Innovation in Arable Farming: Technologies for Sustainable Farming Systems</h5></p>
+                        <p>Explore how innovative, digital technologies can help achieve sustainable intensification of arable farming systems.
+                                Join course</p>     
+                    </div>
+                    <div class="btn btn3 btn-primary mt-auto">Find out more</div>
+   
+                </div>       
+        </div>
+        <div class="col-xlg-3 col-md-3 col-sm-12 p-5">
+                <div class="card-img-top card3 d-flex flex-column">
+                    <img src="/images/image2.png" class="cardimage" alt="Hollywood Sign on The Hill" />
+                    <div class="card-body">
+                        <p>Queensland University Technology</p>
+                        <p><h5>Future Food: Sustaiable food systems</h5></p>
+                        <p>Follow food’s fascinating journey from the farm to your body and explore new food technologies and nutrition around the world.</p> 
+                    </div>
+                    <div class="btn btn3 btn-primary mt-auto">Find out more</div>
+                        
+                </div>                 
+        </div>
+         <div class="col-xlg-3 col-md-3 col-sm-12 p-5">
+
+                <div class="card card4 bg-white">
+                    <div class="card-body">
+                        <p class="card-text">3</p>
+                    </div>
+                </div>                 
+        </div>
+    </div>
+</div>
